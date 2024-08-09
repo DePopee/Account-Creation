@@ -16,9 +16,8 @@ public class AccountDetailsEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne()
-    @JoinColumn(name = "customer_id")
-    private CustomerDetailsEntity customer;
+    @Column(name = "customer_id")
+    private String customerId;
 
     @Column(unique = true, nullable = false)
     private String accountNumber;

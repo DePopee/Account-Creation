@@ -17,7 +17,8 @@ public class CreateAccountRequest {
     private int age;
     private String residentialAddress;
     @NonNull
-    private String BVN;
+    private String bvn;
     private String username;
     private String password;
+    private String email;
 }

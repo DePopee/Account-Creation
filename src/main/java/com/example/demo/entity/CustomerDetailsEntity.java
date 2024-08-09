@@ -32,7 +32,7 @@ public class CustomerDetailsEntity {
     private String residentialAddress;
 
     @Column(unique = true, nullable = false)
-    private String BVN;
+    private String bvn;
 
     @Column(unique = true, nullable = false)
     private String username;
@@ -48,4 +48,8 @@ public class CustomerDetailsEntity {
 
     @Column(unique = true, nullable = false)
     private String email;
+
+    @Column(unique = true,name = "customer_id")
+    private String customerId;
+
 }
